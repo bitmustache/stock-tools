@@ -1,0 +1,35 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - name: column_panel_2
+    properties: {role: elevated-card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'ZDPROM,XHZRUN'}
+    components:
+    - name: rich_text_1
+      properties: {content: "## Welcome to Stock Tools! \n##\nThis app is aimed to\
+          \ do stock calculations based on different short and long terms strategies.\
+          \ All the tools are located in the side menu. \n##\nThank you for using\
+          \ Stock Tools!"}
+      type: RichText
+      layout_properties: {grid_position: 'IZBYZM,SMHNFV'}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+- name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {slot: left-nav}
+- name: label_1
+  properties: {text: Stock Tools}
+  type: Label
+  layout_properties: {slot: title}
+slots: {}
