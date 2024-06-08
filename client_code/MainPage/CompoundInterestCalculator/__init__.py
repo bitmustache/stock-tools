@@ -1,8 +1,8 @@
-from ._anvil_designer import MainPageTemplate
+from ._anvil_designer import CompoundInterestCalculatorTemplate
 from anvil import *
 
 
-class MainPage(MainPageTemplate):
+class CompoundInterestCalculator(CompoundInterestCalculatorTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -11,11 +11,3 @@ class MainPage(MainPageTemplate):
 
   def mainpage_link_click(self, **event_args):
     open_form('MainPage')
-  
-  def compoundinterestcalc_link_click(self, **event_args):
-    open_form('MainPage.CompoundInterestCalculator')
-
-  
-
-
-

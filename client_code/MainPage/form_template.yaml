@@ -28,8 +28,20 @@ components:
   properties: {}
   type: ColumnPanel
   layout_properties: {slot: left-nav}
-- name: label_1
+  components:
+  - name: mainpage_link
+    properties: {text: Main Page}
+    type: Link
+    layout_properties: {grid_position: 'DVDWKJ,AFWETX'}
+    event_bindings: {click: mainpage_link_click}
+  - name: compoundinterestcalc_link
+    properties: {text: Compound Interest Calculator}
+    type: Link
+    layout_properties: {grid_position: 'RAIPQX,ZQELKP'}
+    event_bindings: {click: compoundinterestcalc_link_click}
+- name: stocktools_header
   properties: {text: Stock Tools}
   type: Label
   layout_properties: {slot: title}
+  event_bindings: {show: stocktools_header_show}
 slots: {}
