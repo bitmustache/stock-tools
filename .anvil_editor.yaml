@@ -3,7 +3,8 @@ unique_ids:
     MainPage: ZFNSBCXQ5ADCBHQBRUL5JG733EXYR5M7
     MainPage.CompoundInterestCalculator: '1717839607002939891105174.1366'
   modules: {}
-  server_modules: {}
+  server_modules:
+    ServerModule1: '1717850033481928552930230.7218'
   assets:
     standard-page.html: XHJJM3T52RLFSZXVMYE2WEWL7GSQ4GTD
     theme.css: CB4KMXQFQ6XMNAIRNG5JWCTHRC7327JN

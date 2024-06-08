@@ -1,5 +1,6 @@
 from ._anvil_designer import MainPageTemplate
 from anvil import *
+import anvil.server
 
 
 class MainPage(MainPageTemplate):

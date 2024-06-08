@@ -1,5 +1,6 @@
 from ._anvil_designer import CompoundInterestCalculatorTemplate
 from anvil import *
+import anvil.server
 
 
 class CompoundInterestCalculator(CompoundInterestCalculatorTemplate):
