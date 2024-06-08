@@ -6,7 +6,7 @@ class CompoundInterestCalculator(CompoundInterestCalculatorTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+    self.result_card.visible = False
     # Any code you write here will run before the form opens.
 
   def mainpage_link_click(self, **event_args):
@@ -18,14 +18,18 @@ class CompoundInterestCalculator(CompoundInterestCalculatorTemplate):
   def calculate_compoundinterest_button_click(self, **event_args):
     # get the user inputs
     principal = float(self.principal_textbox.text)
-    interest_rate = float(self.interestrate_textbox.text)
-    years = float(self.years_textbox.text)
-    times_compounded = float(self.timescompounded_textbox.text)
+    interest_rate = float(self.interestrate_textbox.text) / 100
+    years = int(self.years_textbox.text)
+    times_compounded = int(self.timescompounded_textbox.text)
 
     # calculate the future value based on inputs
     future_value = self.compound_interest(principal, interest_rate, years, times_compounded)
 
     self.result_label.text = f"The future value of your investment is: ${future_value: .2f}"
+    self.result_card.visible = True # the result card is rendered with the result
+    
     
   def compound_interest(self, principal, interest_rate, years, times_compounded):
-    amount = principal * (1 )
+    amount = principal * (1 + interest_rate / times_compounded) ** (times_compounded * years)
+    return amount
+
