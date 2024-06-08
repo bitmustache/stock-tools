@@ -15,4 +15,5 @@ runtime_options:
   legacy_features: {class_names: true, bootstrap3: true, __dict__: true, root_container: true}
 startup_form: null
 native_deps: null
+uplink_visible: true
 renamed: true
