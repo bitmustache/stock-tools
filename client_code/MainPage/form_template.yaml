@@ -20,6 +20,10 @@ components:
           \ Stock Tools!"}
       type: RichText
       layout_properties: {grid_position: 'IZBYZM,SMHNFV'}
+  - name: rich_text_2
+    properties: {content: made with ❤️ by bitmustache apps, align: center}
+    type: RichText
+    layout_properties: {grid_position: 'PLQPQE,YVDDGE'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
