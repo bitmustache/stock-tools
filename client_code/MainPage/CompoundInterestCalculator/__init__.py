@@ -29,7 +29,7 @@ class CompoundInterestCalculator(CompoundInterestCalculatorTemplate):
 
     self.result_label.text = f"The future value of your investment is: ${future_value: .2f}"
     self.result_card.visible = True # the result card is rendered with the result
-    graph = anvil.server.call('compound_interest_graph', principal, rate, times_compounded, years)
+    graph = anvil.server.call('compound_interest_graph', principal, interest_rate, years, times_compounded)
     self.plot_image.source = graph
     self.graph_card.visible = True  # show the graph card
     
