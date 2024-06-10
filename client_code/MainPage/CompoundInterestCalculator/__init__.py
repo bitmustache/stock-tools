@@ -8,6 +8,7 @@ class CompoundInterestCalculator(CompoundInterestCalculatorTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.result_card.visible = False
+    self.graph_card.visible = False
     # Any code you write here will run before the form opens.
 
   def mainpage_link_click(self, **event_args):
@@ -28,9 +29,13 @@ class CompoundInterestCalculator(CompoundInterestCalculatorTemplate):
 
     self.result_label.text = f"The future value of your investment is: ${future_value: .2f}"
     self.result_card.visible = True # the result card is rendered with the result
-    
+    graph = anvil.server.call('compound_interest_graph', principal, rate, times_compounded, years)
+    self.plot_image.source = graph
+    self.graph_card.visible = True  # show the graph card
     
   def compound_interest(self, principal, interest_rate, years, times_compounded):
     amount = principal * (1 + interest_rate / times_compounded) ** (times_compounded * years)
     return amount
+
+  
 
