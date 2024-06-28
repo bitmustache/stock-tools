@@ -22,18 +22,6 @@ components:
     properties: {content: made with ❤️ by bitmustache apps, align: center}
     type: RichText
     layout_properties: {grid_position: 'PLQPQE,YVDDGE'}
-  - name: adsense
-    properties: {}
-    type: form:AdSense
-    layout_properties: {grid_position: 'LTEGCY,GMJUTU'}
-  - name: ad_sense_2
-    properties: {}
-    type: form:AdSense
-    layout_properties: {grid_position: 'KXAEXO,ZCMETA'}
-  - name: ad_sense_1
-    properties: {}
-    type: form:AdSense
-    layout_properties: {grid_position: 'XXTOFR,SDWLEB'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
