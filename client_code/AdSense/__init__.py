@@ -25,3 +25,8 @@ class AdSense(AdSenseTemplate):
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
     '''
+
+    if hasattr(self, 'html_ad_container'):
+      self.html_ad_container.html = ad_code
+    else:
+      print("html_ad_container component not found.")
