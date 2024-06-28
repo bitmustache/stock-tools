@@ -3,7 +3,18 @@ container:
   properties:
     html: |-
       <center style="font-style:italic; color:#888; margin: 3em;">
-        (Insert your custom HTML here)
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787864388418651"
+          crossorigin="anonymous"></script>
+          <!-- Horizontal Responsive -->
+          <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-4787864388418651"
+              data-ad-slot="1877386277"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
       </center>
       <div anvil-slot="default"></div>
 components: []
