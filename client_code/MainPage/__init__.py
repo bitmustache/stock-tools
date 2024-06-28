@@ -16,6 +16,8 @@ class MainPage(MainPageTemplate):
   def compoundinterestcalc_link_click(self, **event_args):
     open_form('MainPage.CompoundInterestCalculator')
 
+    self.ad_container.clear()
+    self.ad_container.add_component(AdSense())
   
 
 
