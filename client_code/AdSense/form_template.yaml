@@ -11,7 +11,7 @@ container:
       <!DOCTYPE html>
       <html>
       <body>
-        <div min-width: '300px'>
+        <div style: "min-width: 300px;">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787864388418651"
            crossorigin="anonymous"></script>
       <!-- Horizontal Responsive -->
