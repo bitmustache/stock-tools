@@ -2,7 +2,7 @@ container:
   type: HtmlTemplate
   properties:
     html: |-
-      <center style="font-style:italic; color:#888; margin: 3em;">
+      <body>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787864388418651"
           crossorigin="anonymous"></script>
           <!-- Horizontal Responsive -->
@@ -15,7 +15,7 @@ container:
           <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
-      </center>
+      </body>
       <div anvil-slot="default"></div>
 components: []
 is_package: true
