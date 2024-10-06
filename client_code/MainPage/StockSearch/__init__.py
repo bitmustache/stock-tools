@@ -1,9 +1,9 @@
-from ._anvil_designer import MainPageTemplate
+from ._anvil_designer import StockSearchTemplate
 from anvil import *
 import anvil.server
 
 
-class MainPage(MainPageTemplate):
+class StockSearch(StockSearchTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -18,9 +18,3 @@ class MainPage(MainPageTemplate):
 
   def stocksearch_link_click(self, **event_args):
     open_form('MainPage.StockSearch')
-
-
-  
-
-
-
