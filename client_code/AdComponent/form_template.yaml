@@ -3,6 +3,7 @@ container:
   data_bindings: []
   properties:
     html: |-
+      <body>
       <center style="font-style:italic; color:#888; margin: 3em;">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787864388418651"
            crossorigin="anonymous"></script>
@@ -18,6 +19,7 @@ container:
       </script>
       </center>
       <div anvil-slot="default"></div>
+      </body>
   type: HtmlTemplate
 custom_component: true
 custom_component_container: true
