@@ -24,3 +24,4 @@ container:
 custom_component: true
 custom_component_container: true
 is_package: true
+properties: []
