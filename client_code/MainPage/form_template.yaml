@@ -14,25 +14,10 @@ components:
     name: rich_text_2
     properties: {align: center, content: made with ❤️ by bitmustache apps}
     type: RichText
-  - data_bindings: []
-    layout_properties: {grid_position: 'NNUPWI,ZSBKOI'}
-    name: rich_text_3
-    properties:
-      content: |-
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787864388418651"
-             crossorigin="anonymous"></script>
-        <!-- Horizontal Responsive -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-4787864388418651"
-             data-ad-slot="1877386277"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      format: restricted_html
-    type: RichText
+  - layout_properties: {grid_position: 'KRFWDS,XQNTTX'}
+    name: ad_component_1
+    properties: {}
+    type: form:AdComponent
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
