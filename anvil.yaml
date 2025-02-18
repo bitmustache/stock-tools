@@ -1,7 +1,10 @@
 allow_embedding: false
 dependencies: []
 name: Stock Tools
-native_deps: null
+native_deps:
+  head_html: |-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787864388418651"
+         crossorigin="anonymous"></script>
 package_name: Stock_Tools
 renamed: true
 runtime_options:
